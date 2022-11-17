@@ -1,0 +1,30 @@
+.App-logo {
+    height: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    pointer-events: none;
+}
+
+.App-header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    color: #fff;
+    background-color: #bc8f8b;
+    box-shadow: rgb(220, 220, 220) 0px 2px 10px;
+}
+
+.App-title {
+    flex: 1;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.logout {
+    font-size: 20px;
+    padding-right: 20px;
+}
