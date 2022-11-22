@@ -10,10 +10,10 @@ function TopBar(props){
             <img src={logo} className="App-logo" alt="logo" />
             <span className="App-title">TravelPlanner</span>
             {
-              isLoggedIn ?
-              <LogoutOutlined className='logout' onClick={handleLogout}/>
-              :
-              null
+                isLoggedIn ?
+                <LogoutOutlined className='logout' onClick={handleLogout}/>
+                :
+                null
             }
         </header>
     )
