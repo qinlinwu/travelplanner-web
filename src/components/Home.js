@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Row, Col } from 'antd';
 import Choice from './Choice';
 import PointList from './PointList';
@@ -9,15 +9,16 @@ class Home extends Component {
   render() {
     return (
       <Row className='main'>
-          <Col span={8} className="left-side">
-              <Choice/>
-              <PointList/>
-          </Col>
-          <Col span={16} className="right-side">
-              <GoogleMap/>
-          </Col>
+        <Col span={8} className="left-side">
+          <Choice />
+          <PointList />
+        </Col>
+        <Col span={16} className="right-side">
+          <GoogleMap />
+
+        </Col>
       </Row>
-  );
+    );
   }
 }
 export default Home
