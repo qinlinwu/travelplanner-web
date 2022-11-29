@@ -5,6 +5,8 @@
 @import "./styles/Login.css";
 @import "./styles/Register.css";
 @import "./styles/Home.css";
+@import "./styles/Choice.css";
+@import "./styles/PointList.css";
 
 body {
   margin: 0;

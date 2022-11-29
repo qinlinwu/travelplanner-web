@@ -15,9 +15,9 @@ function Main(props){
   );
 };
 
-  const showHome = () => {
-    return isLoggedIn ? <Home /> : <Redirect to="/login" />;
-};
+//   const showHome = () => {
+//     return isLoggedIn ? <Home /> : <Redirect to="/login" />;
+// };
 
     return (
       <div className="main">
@@ -25,7 +25,7 @@ function Main(props){
           <Route path="/" exact render={showLogin} />
           <Route path="/login" render={showLogin} />
           <Route path="/register" component={Register} />
-          <Route path="/home" render={showHome} />
+          <Route path="/home" component={Home} />
         </Switch>
       </div>
     )

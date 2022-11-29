@@ -27,6 +27,7 @@ function App() {
     <div className="App">
       <TopBar isLoggedIn={isLoggedIn} handleLogout={logout}/>
       <Main isLoggedIn={isLoggedIn} handleLoggedIn={loggedIn}/>
+      
     </div>
   );
 }
