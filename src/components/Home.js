@@ -19,7 +19,7 @@ class Home extends Component {
               <PointList/>
           </Col>
           <Col span={16} className="right-side">
-              <GoogleMap/>
+              <Map/>
           </Col>
       </Row>
     );
