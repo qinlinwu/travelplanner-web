@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import { Route, Switch, Redirect} from "react-router";
 import Login from './Login';
 import Register from './Register';
@@ -6,12 +6,13 @@ import Home from './Home';
 
 function Main(props){
   const { isLoggedIn, handleLoggedIn } = props;
+  const [authed, setAuthed] = useState(false);
 
   const showLogin = () => {
-    return isLoggedIn ? (
+    return authed ? (
     <Redirect to="/home" />
       ) : (
-    <Login handleLoggedIn={handleLoggedIn} />
+    <Login onSuccess={() => setAuthed(true)} />
   );
 };
 
